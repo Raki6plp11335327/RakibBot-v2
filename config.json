@@ -1,29 +1,43 @@
 {
-  "author": "Nayan",
-  "autoRestart": true,
-  "accpetPending": false,
-  "developermode": false,
-  "language": "en",
-  "notification": false,
-  "approval": false,
-  "saveState": true,
-  "banMsg": false,
-  "adminOnlyMsg": false,
-  "BOTNAME": "RAKIB-bot",
+  "FCA": {
+    "path": "./node_modules/ws3-fca/index.js",
+    "forceLogin": true,
+    "listenEvents": true,
+    "logLevel": "silent",
+    "updatePresence": true,
+    "selfListen": false,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64",
+    "online": true,
+    "autoMarkDelivery": false,
+    "autoMarkRead": false
+  },
+  "CASS_WATCH": {
+    "enabled": false,
+    "note": "Cassidy Watch is a powerful file backup system that uses meta.version to track changes to your files. It is highly recommended to keep this enabled."
+  },
+  "autoCreateDB": false,
+  "MongoConfig": {
+    "status": true,
+    "uri": "MONGO_URI"
+  },
+  "discordBotToken": "",
+  "discordClientID": "",
+  "pageAccessToken": "",
+  "pageVerifyToken": "",
+  "noFB": true,
+  "credentials": {
+    "email": "",
+    "password": "",
+    "email_asEnvKey": false,
+    "password_asEnvKey": false,
+    "note": "This is for the bot account, not your main account, if email_asEnvKey or password_asEnvKey is true, it will use the .env key provided in email and password fields, this is helpful when hiding the credentials."
+  },
   "PREFIX": "+",
-  "OPERATOR": [
-    "100014896964436",
-    "100000959749712"
-  ],
-  "ADMINBOT": [
-    "61554363351811",
-    "100093945429123"
-  ],
-  "OWNER": ["100000959749712"], 
-  "APPROVED": [],
-  "disabledcmds": [],
-  "disabledevents": [],
-  "note": "make sure that the bot name you entered is all lowercase",
-  "notice": "dont cng author name and owner uid. otherwise bot not working",
-  "notice2": "if you run use email and password, use saveState false; otherwise, use saveState true"
+  "ADMINBOT": ["wss:admin", "61554363351811"],
+  "EXTRAPREFIX": ["@"],
+  "MODERATORBOT": ["wss:moderator"],
+  "exitOnError": false,
+  "WEB_PASSWORD": "x64",
+  "maintenanceMode": false,
+  "noLevelUI": true
 }
